@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+body {
+  background-color: #0f172a; /* Slate Dark Background */
+  color: #f8fafc;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+.tech-tag {
+  background-color: #1e293b; /* Dark background */
+  color: #38bdf8; /* Bright blue text */
+  padding: 0.5rem 1rem;
+  border-radius: 9999px; /* Pill shape */
+  font-size: 0.875rem;
+  margin: 0.25rem;
+  display: inline-block;
+}
