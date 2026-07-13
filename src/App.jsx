@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import Hero from './Hero';
 import Projects from './Projects';
 import Tech from './Tech';
@@ -103,6 +103,7 @@ export default function App() {
         {/* Page Switcher */}
         <main style={{ maxWidth: '1100px', margin: '0 auto' }}>
           <Routes>
+            <Route path="*" element={<Navigate to="/" replace />} />
             <Route path="/" element={<Hero />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/technologies" element={<Tech />} />
