@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // 1. Added the router Link import
 
 export default function Hero() {
   return (
@@ -103,7 +104,7 @@ export default function Hero() {
                   fontWeight: '600',
                 }}
               >
-                Northeastern Illinois Univeristy
+                Northeastern Illinois University
               </h4>
               <p style={{ color: '#94a3b8', fontSize: '0.95rem', margin: 0 }}>
                 Master of Science in Computer Science
@@ -120,6 +121,7 @@ export default function Hero() {
             </span>
           </div>
         </div>
+
         {/* Hobbies Card */}
         <div
           style={{
@@ -144,7 +146,6 @@ export default function Hero() {
           </p>
         </div>
 
-        {/* Fun Fact Card */}
         {/* Fun Fact Card */}
         <div
           style={{
@@ -172,8 +173,9 @@ export default function Hero() {
 
       {/* Call to Actions */}
       <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
-        <a
-          href="/projects"
+        {/* 2. Swapped these out for <Link> tags with lowercase paths */}
+        <Link
+          to="/projects"
           style={{
             padding: '0.75rem 1.5rem',
             backgroundColor: '#38bdf8',
@@ -184,9 +186,9 @@ export default function Hero() {
           }}
         >
           View My Work
-        </a>
-        <a
-          href="/contact"
+        </Link>
+        <Link
+          to="/contact"
           style={{
             padding: '0.75rem 1.5rem',
             border: '1px solid #334155',
@@ -197,7 +199,7 @@ export default function Hero() {
           }}
         >
           Let's Connect
-        </a>
+        </Link>
       </div>
     </section>
   );
