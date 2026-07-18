@@ -6,40 +6,40 @@ const projects = [
     description: "Developed and maintained the organization's web platforms while collaborating with the tech team on coding, testing, and troubleshooting features. Implemented responsive UI/UX enhancements.",
     image: new URL('./assets/Seaside.png', import.meta.url).href, 
     tags: ["React.js", "UI/UX Redesign", "CSS Modules", "Responsive Design"],
-    liveLink: "#",
-    githubLink: "#"
+    liveLink: "https://www.seasidesustainability.org/", // Update to your live URL if different
+    //githubLink: "https://github.com/nikhithareddi/Seaside"
   },
   {
     title: "📅 EventHive",
     description: "A mobile event registration application engineered to handle seamless user sign-ups, schedule tracking, and interactive community planning workflows.",
     image: new URL('./assets/event.png', import.meta.url).href,
     tags: ["React", "Ionic", "Mobile Development", "UI/UX Engineering"],
-    liveLink: "#",
-    githubLink: "#"
+    //liveLink: "https://nikhithareddi.github.io/EventHive",
+    liveLink: "https://github.com/nikhithareddi/EventHive"
   },
   {
     title: "🦟 La Mosca",
     description: "An interactive frontend simulation project focusing on fine-tuned user interactions, responsive animations, and precise visual component mechanics.",
     image: new URL('./assets/Lamosca.png', import.meta.url).href,
     tags: ["React.js", "Interactive Design", "Frontend Development"],
-    liveLink: "#",
-    githubLink: "#"
+    liveLink: "https://lamosca.press/#home",
+    //githubLink: "https://github.com/nikhithareddi/la-mosca"
   },
   {
     title: "🧠 Parkinsons Detection Layout",
     description: "A specialized, user-centric interface designed to cleanly display complex healthcare data visualizations, accessibility features, and analytics indicators.",
     image: new URL('./assets/Park.png', import.meta.url).href,
     tags: ["UI/UX Design", "Data Visualization", "Healthcare Tech"],
-    liveLink: "#",
-    githubLink: "#"
+    LiveLink: null,
+    githubLink: null
   },
   {
     title: "💼 Know My Secretariat",
     description: "A polished organizational or management dashboard focused on clean data hierarchies, intuitive portal workflows, and responsive navigation layouts.",
     image: new URL('./assets/Know.png', import.meta.url).href,
     tags: ["React", "Dashboard UI", "State Management"],
-    liveLink: "#",
-    githubLink: "#"
+    liveLink: null,
+    githubLink: null
   }
 ];
 
@@ -65,7 +65,7 @@ export default function Projects() {
             marginBottom: '0.5rem',
           }}
         >
-          My Portfolio
+          My Projects
         </span>
         <h2
           style={{
@@ -211,6 +211,8 @@ export default function Projects() {
             >
               <a
                 href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{
                   color: '#38bdf8',
                   textDecoration: 'none',
@@ -220,17 +222,7 @@ export default function Projects() {
               >
                 View Demo →
               </a>
-              <a
-                href={project.githubLink}
-                style={{
-                  color: '#94a3b8',
-                  textDecoration: 'none',
-                  fontSize: '0.9rem',
-                  fontWeight: '500',
-                }}
-              >
-                GitHub Code
-              </a>
+              
             </div>
           </div>
         ))}
