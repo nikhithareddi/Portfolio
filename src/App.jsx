@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import Hero from './Hero';
+import Work from './Work';
 import Projects from './Projects';
 import Tech from './Tech';
 import Contact from './Contact';
@@ -47,7 +48,7 @@ export default function App() {
                 fontSize: '1.25rem',
               }}
             >
-              PORTFOLIO
+              Sri Nikhitha Bhimireddi
             </Link>
 
             {/* Navigation Links */}
@@ -62,6 +63,18 @@ export default function App() {
                 }}
               >
                 Home
+               </Link>
+              <Link
+                to="/work"
+                style={{
+                  color: '#94a3b8',
+                  textDecoration: 'none',
+                  fontWeight: '500',
+                  fontSize: '0.95rem',
+                }}
+              >
+                Work
+              
               </Link>
               <Link
                 to="/projects"
@@ -105,6 +118,7 @@ export default function App() {
           <Routes>
             <Route path="*" element={<Navigate to="/" replace />} />
             <Route path="/" element={<Hero />} />
+            <Route path="/work" element={<Work />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/technologies" element={<Tech />} />
             <Route path="/contact" element={<Contact />} />
