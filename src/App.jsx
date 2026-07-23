@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import Hero from './Hero';
+//import Education from './Education';
+import Education from './Education';
 import Work from './Work';
 import Projects from './Projects';
 import Tech from './Tech';
@@ -12,7 +14,7 @@ export default function App() {
     <Router>
       <div
         style={{
-          backgroundColor: '#0f172a',
+          backgroundColor: '#0f172a ',
           minHeight: '100vh',
           color: '#f8fafc',
         }}
@@ -64,6 +66,17 @@ export default function App() {
               >
                 Home
                </Link>
+               <Link
+                to="/education"
+                style={{
+                  color: '#94a3b8',
+                  textDecoration: 'none',
+                  fontWeight: '500',
+                  fontSize: '0.95rem',
+                }}
+              >
+                Education 
+              </Link>
               <Link
                 to="/work"
                 style={{
@@ -118,6 +131,7 @@ export default function App() {
           <Routes>
             <Route path="*" element={<Navigate to="/" replace />} />
             <Route path="/" element={<Hero />} />
+            <Route path="/education" element={<Education />} />
             <Route path="/work" element={<Work />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/technologies" element={<Tech />} />
