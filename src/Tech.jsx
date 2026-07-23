@@ -41,11 +41,12 @@ export default function Tech() {
         margin: '0 auto',
       }}
     >
+        
       <h2
         style={{
           fontSize: '2.5rem',
           fontWeight: '700',
-          color: '#38bdf8',
+          color: '#ffffff',
           marginBottom: '0.5rem',
           textAlign: 'center',
         }}
