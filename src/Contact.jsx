@@ -159,7 +159,7 @@ export default function Contact() {
           Let's Connect & Build Together
         </h1>
         <p style={{ color: '#cbd5e1', fontSize: '1.1rem', maxWidth: '650px', margin: '0 auto', lineHeight: '1.6' }}>
-          Whether you have a frontend opportunity, a project idea, or just want to swap book suggestions and trip recommendations—my inbox is always open!
+          Whether you have a frontend opportunity, a project idea, or just want to swap book suggestions and trip recommendations — my inbox is always open!
         </p>
       </div>
 
@@ -282,7 +282,7 @@ export default function Contact() {
 
         <div style={{ display: 'flex', gap: '1.25rem', justifyContent: 'center', flexWrap: 'wrap' }}>
           <a
-            href="https://github.com/nikhitha-bhimireddi"
+            href="https://github.com/nikhithareddi"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
@@ -291,7 +291,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/nikhitha-bhimireddi"
+            href="https://www.linkedin.com/in/nicky2605/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-link"
@@ -300,10 +300,10 @@ export default function Contact() {
           </a>
 
           <a
-            href="mailto:nikhitha.bhimireddi@email.com"
+            href="mailto:srinikhitha2605@gmail.com"
             className="social-link"
           >
-            ✉️ Direct Email
+            ✉️ Direct Email 
           </a>
         </div>
       </div>
